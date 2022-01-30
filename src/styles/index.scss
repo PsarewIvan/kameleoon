@@ -1,0 +1,25 @@
+@import './var';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $backgroundColor;
+    color: $grayColor;
+    @include robotoRegularFont;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include montserratBoldFont;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,48 @@
+$backgroundColor: #fafafa;
+
+$blackColor: #222222;
+$darkGrayColor: #474747;
+$grayColor: #5c5c5c;
+$lightGrayColor: #999999;
+$lightestGrayColor: #d1d1d1;
+
+$redStatusColor: #fe4848;
+$greenStatusColor: #1bda9d;
+$orangeStatusColor: #ff8346;
+
+$greenButtonColor: #2ee5ac;
+$grayButtonColor: #7d7d7d;
+
+$redPinColor: #e14165;
+$lightVioletPinColor: #c2c2ff;
+$violetPinColor: #8686ff;
+
+@mixin robotoRegularFont {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin robotoMediumFont {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin montserratSemiBoldFont {
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin montserratMediumFont {
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin montserratBoldFont {
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin nunitoBoldFont {
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
