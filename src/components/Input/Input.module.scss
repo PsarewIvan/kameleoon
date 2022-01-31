@@ -1,0 +1,16 @@
+@import '../../styles/var';
+
+.input {
+    width: 100%;
+    min-height: 45px;
+    padding: 0 82px 0 37px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 15px;
+    font-size: 14px;
+    color: $darkGrayColor;
+
+    &::placeholder {
+        color: $lightestGrayColor;
+    }
+}

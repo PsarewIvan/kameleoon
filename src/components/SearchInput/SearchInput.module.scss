@@ -1,0 +1,26 @@
+@import '../../styles/var';
+
+.wrapper {
+    position: relative;
+}
+
+.label,
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.label {
+    right: 16px;
+    font-size: 14px;
+    color: $lightestGrayColor;
+}
+
+.icon {
+    left: 13px;
+
+    path {
+        fill: $blackColor;
+    }
+}

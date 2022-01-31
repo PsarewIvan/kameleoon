@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from '../../components/Link/Link';
+import Link from '../../components/CustomLink/CustomLink';
 
 import s from './NotFound.module.scss';
 

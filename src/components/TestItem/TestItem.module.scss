@@ -1,0 +1,84 @@
+@import '../../styles/var';
+
+.wrapper {
+    position: relative;
+    align-items: center;
+    min-height: 70px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+
+    @include gridTemplate;
+
+    &:hover {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        border-radius: 3px 0px 0px 3px;
+        background-color: $grayButtonColor;
+    }
+
+    &Delivery {
+        &::after {
+            background-color: $lightVioletPinColor;
+        }
+    }
+
+    &Market {
+        &::after {
+            background-color: $redPinColor;
+        }
+    }
+
+    &Games {
+        &::after {
+            background-color: $violetPinColor;
+        }
+    }
+}
+
+.name {
+    font-weight: 500;
+    font-size: 13px;
+    color: $darkGrayColor;
+}
+
+.type {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: $grayColor;
+}
+
+.status {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+
+    &ONLINE {
+        color: $greenStatusColor;
+    }
+
+    &PAUSED {
+        color: $orangeStatusColor;
+    }
+
+    &DRAFT {
+        color: $grayStatusColor;
+    }
+
+    &STOPPED {
+        color: $redStatusColor;
+    }
+}
+
+.site {
+    font-size: 12px;
+    color: $grayColor;
+}

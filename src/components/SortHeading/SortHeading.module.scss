@@ -1,0 +1,7 @@
+@import '../../styles/var';
+
+.wrapper {
+    margin-bottom: 10px;
+
+    @include gridTemplate;
+}
