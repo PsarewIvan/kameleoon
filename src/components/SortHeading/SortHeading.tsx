@@ -5,7 +5,7 @@ import SortButton from '../SortButton/SortButton';
 import s from './SortHeading.module.scss';
 import { ISortItem, ISortType, SortHeadingProps } from './types';
 
-const SortHeading = (props: SortHeadingProps) => {
+const SortHeading = React.memo((props: SortHeadingProps) => {
     const { onSortChange, sortItem, sortType } = props;
 
     const onSortClick =
@@ -45,6 +45,6 @@ const SortHeading = (props: SortHeadingProps) => {
             />
         </div>
     );
-};
+});
 
 export default SortHeading;

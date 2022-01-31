@@ -7,7 +7,7 @@ import Input from '../Input/Input';
 import s from './SearchInput.module.scss';
 import { SearchInputProps } from './types';
 
-const SearchInput = (props: SearchInputProps) => {
+const SearchInput = React.memo((props: SearchInputProps) => {
     const { label, className, ...otherProps } = props;
 
     return (
@@ -17,6 +17,6 @@ const SearchInput = (props: SearchInputProps) => {
             <SearchIcon className={s.icon} />
         </div>
     );
-};
+});
 
 export default SearchInput;

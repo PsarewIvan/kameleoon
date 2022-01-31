@@ -10,6 +10,11 @@
     display: flex;
     align-items: center;
     margin-top: auto;
+    width: max-content;
+    min-height: 25px;
+    color: $blackColor;
+
+    @include nunitoBoldFont;
 }
 
 .backIcon {
